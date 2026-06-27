@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="images/profile.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>ashutosh Kutar Intro</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#home">Ashutosh <span class="text-purple">Kutar</span></a>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+                aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home" data-section="home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-section="about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services" data-section="services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio" data-section="portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#resume" data-section="resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-section="contact">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3 justify-content-center mt-3 mt-lg-0">
+                    <i class="bi bi-moon-stars fs-5" id="themeIcon"></i>
+                    <div class="theme-switch" id="themeSwitch" role="button" aria-label="Toggle day and night mode">
+                        <div class="switch-circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <p class="small-title reveal">Hi, I'm</p>
+                    <h6 class="hero-title reveal">
+                        <span class="text-purple" id="typing-text"></span>
+                    </h6>
+                    <p class="hero-text reveal">I craft scalable web solutions that power ideas, drive results and grow
+                        brands digitally.</p>
+                    <a href="#portfolio" class="btn hero-btn reveal">My Projects <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="col-lg-6 text-center position-relative">
+                    <div class="hero-image-wrapper" id="heroTilt">
+                        <div class="circle-bg"></div>
+                        <img src="images/profile.png" class="img-fluid hero-image" alt="Profile">
+                        <span class="floating-dot dot1"></span>
+                        <span class="floating-dot dot2"></span>
+                        <span class="floating-dot dot3"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about-section py-5" id="about">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-5">
+                    <div class="about-image-box reveal-left" id="aboutTilt">
+                        <div class="about-circle"></div>
+                        <img src="images/about.png" alt="" class="img-fluid about-image">
+                        <span class="about-dot dot-a"></span>
+                        <span class="about-dot dot-b"></span>
+                        <div class="triangle-shape"></div>
+                    </div>
+                </div>
+                <div class="col-lg-7 reveal-right">
+                    <span class="section-subtitle">About Me</span>
+                    <h2 class="about-title">Ashutosh<span class="text-purple">Kutar</span></h2>
+                    <p class="about-text">
+                        Full Stack Developer ⚡ Laravel Developer 💻 Freelancer on the grind 🚀 I’ve got <span
+                            id="exp"></span> months of
+                        experience building modern, scalable and responsive web applications. I work on both frontend
+                        and backend, turning
+                        ideas into real products with clean code and smooth UI. I also use AI tools 🤖 to build faster
+                        and smarter
+                        solutions. My skills include Laravel, PHP, MySQL, JavaScript, jQuery, AJAX, HTML, CSS,
+                        Bootstrap, and REST APIs. I
+                        enjoy learning, solving problems, and shipping fast 🔥.
+                    </p>
+                    <h5 class="skill-title">My Skills</h5>
+                    <div class="skills-wrapper">
+                        <span class="skill-box">HTML</span>
+                        <span class="skill-box">CSS</span>
+                        <span class="skill-box">JavaScript</span>
+                        <span class="skill-box">Bootstrap</span>
+                        <span class="skill-box">PHP</span>
+                        <span class="skill-box">Laravel</span>
+                        <span class="skill-box">MySQL</span>
+                        <span class="skill-box">Ajax</span>
+                        <span class="skill-box">jQuery</span>
+                        <span class="skill-box">API Integration</span>
+                        <span class="skill-box">OPP's</span>
+
+                    </div>
+                    <a href="#contact" class="btn learn-btn mt-4">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="services-section py-5" id="services">
+        <div class="container">
+            <div class="section-heading mb-5 reveal">
+                <span class="section-subtitle">Services I Offer To My Clients</span>
+                <h2 class="section-title">My Best <span class="text-purple">Services</span></h2>
+            </div>
+
+            <div class="row g-4" id="serviceCards">
+
+                <!-- Service 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card reveal tilt-card">
+                        <div class="service-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <span class="service-category">Full Stack Development</span>
+                        <h4>Web Applications</h4>
+                        <p>I build responsive, fast and scalable web applications using Laravel, PHP, MySQL and modern
+                            frontend tools.</p>
+                        <a href="#contact">Get Quote <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card reveal tilt-card">
+                        <div class="service-icon green">
+                            <i class="bi bi-server"></i>
+                        </div>
+                        <span class="service-category">Backend Development</span>
+                        <h4>Laravel & APIs</h4>
+                        <p>Secure backend systems, REST APIs, authentication, admin panels and database management using
+                            Laravel.</p>
+                        <a href="#contact">Get Quote <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card active-service reveal tilt-card">
+                        <div class="service-icon">
+                            <i class="bi bi-lightning-charge"></i>
+                        </div>
+                        <span class="service-category">Freelance Solutions</span>
+                        <h4>Custom Projects</h4>
+                        <p>I convert your ideas into real digital products with clean UI, modern design and fast
+                            delivery.
+                        </p>
+                        <a href="#contact">Get Quote <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="service-dots text-center mt-5">
+                <span class="dot active" data-target="0"></span>
+                <span class="dot" data-target="1"></span>
+                <span class="dot" data-target="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PORTFOLIO ================= -->
+    <section class="portfolio-section py-5" id="portfolio">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center flex-wrap mb-5 reveal">
+                <div>
+                    <span class="section-subtitle">My Amazing Work</span>
+                    <h2 class="section-title">Featured <span class="text-purple">Projects</span></h2>
+                </div>
+                <a href="#contact" class="view-all-btn">View All Projects <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- PROJECT 1 (LIVE LINK) -->
+                <div class="col-lg-6">
+                    <div class="portfolio-card reveal tilt-card">
+                        <img src="images/project1.jpg" class="img-fluid" alt="">
+
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <span>Laravel</span>
+                                <h4>Logistics Site</h4>
+                                <a href="https://logistics.clickvyapar.com/" target="_blank"> view </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2 -->
+                <div class="col-lg-6">
+                    <div class="portfolio-card reveal tilt-card">
+                        <img src="images/project2.jpg" class="img-fluid" alt="">
+
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <span>Laravel</span>
+                                <h4>Finance Management System</h4>
+                                <a href="https://umcalegalservices.com/" target="_blank"> view </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3 -->
+                <div class="col-lg-4">
+                    <div class="portfolio-card small-card reveal tilt-card">
+                        <img src="images/project3.jpg" class="img-fluid" alt="">
+
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <span>UI Design</span>
+                                <h4>Merrage Site</h4>
+                                <a href="https://ashutoshkutar80.github.io/durgesh_wedding_site/" target="_blank"> view
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 4 -->
+                <div class="col-lg-4">
+                    <div class="portfolio-card small-card reveal tilt-card">
+                        <img src="images/project4.jpg" class="img-fluid" alt="">
+
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <span>Branding</span>
+                                <h4>Agency Website</h4>
+                                <p>Coming Soon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 5 -->
+                <div class="col-lg-4">
+                    <div class="portfolio-card small-card reveal tilt-card">
+                        <img src="images/project5.jpg" class="img-fluid" alt="">
+
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <span>Development</span>
+                                <h4>Portfolio Website</h4>
+                                <p>Coming Soon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= RESUME ================= -->
+    <section class="resume-section py-5" id="resume">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="section-subtitle">My Resume</span>
+                <h2 class="section-title">Education & <span class="text-purple">Experience</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item left reveal-left">
+                    <div class="timeline-card">
+                        <span class="year-badge">June 2026 - Present</span>
+                        <h4>Laravel Developer</h4>
+                        <h6>SwapnilSoft Pvt. Ltd.</h6>
+                        <p>Developing enterprise applications, REST APIs, Laravel systems and modern frontend solutions.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item right reveal-right">
+                    <div class="timeline-card">
+                        <span class="year-badge">July 2025 - January 2026</span>
+                        <h4>Full Stack Developer Training</h4>
+                        <h6>Worked on Many Project</h6>
+                        <p>Worked on CRM systems, eCommerce platforms and custom dashboards.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left reveal-left">
+                    <div class="timeline-card">
+                        <span class="year-badge">August 2022 - April 2024</span>
+                        <h4>Master in Computer Application</h4>
+                        <h6>Pranveer Singh Institute of Technology</h6>
+                        <p>Specialized in web development, database management and software engineering.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right reveal-right">
+                    <div class="timeline-card">
+                        <span class="year-badge">July 2019 - June 2022</span>
+                        <h4>Bachelor in Computer Application</h4>
+                        <h6>Naraina Group of Institute</h6>
+                        <p>Built responsive interfaces using HTML, CSS, Bootstrap and JavaScript.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COUNTERS -->
+    <section class="counter-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-6">
+                    <div class="counter-box reveal tilt-card">
+                        <h2 class="counter" data-count="5">0</h2>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="counter-box reveal tilt-card">
+                        <h2 class="counter" data-count="1">0</h2>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="counter-box reveal tilt-card">
+                        <h2 class="counter" data-count="7">0</h2>
+                        <p>Months Experience</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="counter-box reveal tilt-card">
+                        <h2 class="counter" data-count="0">0</h2>
+                        <p>Awards Won</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TESTIMONIAL ================= -->
+    <section class="testimonial-section py-5">
+        <div class="container">
+
+            <div class="text-center mb-5 reveal">
+                <span class="section-subtitle">Client Reviews</span>
+                <h2 class="section-title">What My <span class="text-purple">Clients Say</span></h2>
+            </div>
+
+            <div id="testimonialSlider" class="carousel slide reveal" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <!-- TESTIMONIAL 1 -->
+                    <div class="carousel-item active">
+                        <div class="testimonial-card">
+                            <img src="images/beFirst.jpg" alt="client">
+
+                            <h4>You</h4>
+                            <span>Your Company</span>
+
+                            <p>
+                                You can be my first client and I will give my full dedication to your project.
+                                I focus on clean code, modern design, and on-time delivery.
+                                Let’s build something amazing together 🚀
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- TESTIMONIAL 2 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <img src="images/beFirst.jpg" alt="client">
+
+                            <h4>You</h4>
+                            <span>Your Company</span>
+
+                            <p>
+                                You can be my first client and I am ready to turn your idea into a real product.
+                                I ensure quality work, smooth UI, and strong backend development.
+                                Let’s start building your project today 💻
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- TESTIMONIAL 3 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <img src="images/beFirst.jpg" alt="client">
+
+                            <h4>You</h4>
+                            <span>Your Company</span>
+
+                            <p>
+                                You can be my first client and I will make sure your project stands out.
+                                I build fast, scalable and user-friendly web applications.
+                                Looking forward to working with you 🔥
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- CONTROLS -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialSlider"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialSlider"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+                <!-- INDICATORS -->
+                <div class="carousel-indicators position-relative mt-4" style="bottom:-10px;">
+                    <button type="button" data-bs-target="#testimonialSlider" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#testimonialSlider" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#testimonialSlider" data-bs-slide-to="2"></button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact-section py-5" id="contact">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-5 reveal-left">
+                    <span class="section-subtitle">Get a Chnace</span>
+                    <h2 class="section-title">Let's Work <span class="text-purple">Together</span></h2>
+                    <p class="contact-text">Ready to start your next project? Contact me today.</p>
+                    <div class="contact-info">
+                        <div class="info-box"><i class="bi bi-envelope-fill"></i>ashutoshkutar800@gmail.com</div>
+                        <div class="info-box"><i class="bi bi-telephone-fill"></i>+91 8009795940</div>
+                        <div class="info-box"><i class="bi bi-geo-alt-fill"></i>India</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 reveal-right">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="row">
+
+                            <!-- Name -->
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" id="cf-name" placeholder="Your Name *" required>
+                                <span class="field-msg" id="msg-name"></span>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" id="cf-email" placeholder="Your Email *"
+                                    required>
+                                <span class="field-msg" id="msg-email"></span>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="col-12 mb-3">
+                                <div class="phone-wrapper">
+                                    <select class="phone-flag-select" id="cf-country-code" aria-label="Country code">
+                                        <option value="+91">🇮🇳 +91</option>
+                                        <option value="+1">🇺🇸 +1</option>
+                                        <option value="+44">🇬🇧 +44</option>
+                                        <option value="+61">🇦🇺 +61</option>
+                                        <option value="+971">🇦🇪 +971</option>
+                                        <option value="+966">🇸🇦 +966</option>
+                                        <option value="+65">🇸🇬 +65</option>
+                                        <option value="+60">🇲🇾 +60</option>
+                                        <option value="+92">🇵🇰 +92</option>
+                                        <option value="+880">🇧🇩 +880</option>
+                                        <option value="+94">🇱🇰 +94</option>
+                                        <option value="+977">🇳🇵 +977</option>
+                                        <option value="+49">🇩🇪 +49</option>
+                                        <option value="+33">🇫🇷 +33</option>
+                                        <option value="+81">🇯🇵 +81</option>
+                                        <option value="+86">🇨🇳 +86</option>
+                                    </select>
+                                    <input type="tel" class="form-control phone-input-field" id="cf-phone"
+                                        placeholder="Mobile Number *" required>
+                                </div>
+                                <span class="field-msg" id="msg-phone"></span>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="col-12 mb-3">
+                                <textarea rows="6" class="form-control" id="cf-message" placeholder="Message *"
+                                    required></textarea>
+                                <span class="field-msg" id="msg-message"></span>
+                            </div>
+
+                            <input type="hidden" id="cf-time" name="time">
+
+                            <div class="col-12">
+                                <button type="submit" class="btn send-btn" id="sendBtn">
+                                    <span id="sendBtnText">Send Message</span>
+                                    <i class="bi bi-send" id="sendBtnIcon"></i>
+                                </button>
+                                <div class="form-feedback" id="formFeedback"></div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>Ashutosh <span class="text-purple">Kutar</span></h3>
+                    <p>Laravel Developer | Freelancer</p>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <div class="footer-social">
+                        <a href="#" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ashutosh-kutar-129257332/" target="_blank"
+                            aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/AshutoshKutar80" target="_blank" aria-label="GitHub"><i
+                                class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                © <span id="year"></span> All Rights Reserved.
+            </div>
+
+        </div>
+    </footer>
+
+    <button id="topBtn" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- PROJECT MODAL -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProjectTitle">Project Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <span class="badge mb-3" id="modalProjectCategory" style="background:#7c4dff;">Category</span>
+                    <p id="modalProjectDesc" class="about-text mb-0"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn hero-btn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
