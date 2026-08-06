@@ -1,6 +1,7 @@
+
         /* =============================================
-               EMAILJS CONFIG — apni keys yahan daalo
-            ============================================= */
+           EMAILJS CONFIG — apni keys yahan daalo
+        ============================================= */
         const EMAILJS_PUBLIC_KEY = 'MD9t_azSrPqT2IEgT'; // EmailJS dashboard > Account
         const EMAILJS_SERVICE_ID = 'service_nprhedf'; // EmailJS dashboard > Email Services
         const EMAILJS_TEMPLATE_ID = 'template_osaivqq'; // EmailJS dashboard > Email Templates
@@ -99,7 +100,8 @@
         }, { threshold: 0.15 });
         revealEls.forEach(el => revealObserver.observe(el));
 
-        document.querySelectorAll('#serviceCards .service-card').forEach((el, i) => el.style.transitionDelay = (i * 0.12) + 's');
+        document.querySelectorAll('#serviceCards .service-card').forEach((el, i) => el.style.transitionDelay = (i * 0.12) +
+            's');
         document.querySelectorAll('.portfolio-card.reveal').forEach((el, i) => el.style.transitionDelay = (i * 0.1) + 's');
         document.querySelectorAll('.counter-box.reveal').forEach((el, i) => el.style.transitionDelay = (i * 0.1) + 's');
 
@@ -111,9 +113,11 @@
                 const r = el.getBoundingClientRect();
                 const rx = ((e.clientY - r.top) / r.height - 0.5) * -intensity;
                 const ry = ((e.clientX - r.left) / r.width - 0.5) * intensity;
-                el.style.transform = `perspective(1000px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-6px)`;
+                el.style.transform =
+                    `perspective(1000px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-6px)`;
             });
-            el.addEventListener('mouseleave', () => el.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)');
+            el.addEventListener('mouseleave', () => el.style.transform =
+                'perspective(1000px) rotateX(0) rotateY(0) translateY(0)');
         }
         document.querySelectorAll('.tilt-card').forEach(el => applyTilt(el));
 
@@ -127,7 +131,8 @@
                 const ry = ((e.clientX - r.left) / r.width - 0.5) * 14;
                 img.style.transform = `perspective(1000px) rotateX(${rx}deg) rotateY(${ry}deg)`;
             });
-            wrap.addEventListener('mouseleave', () => img.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)');
+            wrap.addEventListener('mouseleave', () => img.style.transform =
+                'perspective(1000px) rotateX(0) rotateY(0)');
         });
 
         /* =============================================
@@ -278,13 +283,13 @@
                     icon: "success",
                     title: "🚀 Message Sent Successfully!",
                     html: `
-                <div style="font-size:16px;line-height:1.8">
-                    Thank you for reaching out! 🙌<br><br>
-                    Your message has been successfully received.<br>
-                    I'll get back to you within <b>24 hours</b>.<br><br>
-                    <span style="color:#6366f1;">Have a wonderful day! 💜</span>
-                </div>
-            `,
+                    <div style="font-size:16px;line-height:1.8">
+                        Thank you for reaching out! 🙌<br><br>
+                        Your message has been successfully received.<br>
+                        I'll get back to you within <b>24 hours</b>.<br><br>
+                        <span style="color:#6366f1;">Have a wonderful day! 💜</span>
+                    </div>
+                `,
                     confirmButtonText: "Continue",
                     confirmButtonColor: "#6366f1",
                     timer: 6000,
@@ -395,3 +400,4 @@
                 bsNavbar.hide();
             }
         });
+    
